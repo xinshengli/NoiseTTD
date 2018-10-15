@@ -1,0 +1,19 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+sampleNum =
+
+    30    30    30
+
+Bayesian PMF for matrix (3533, 479700):5286. D = 1754.
+alpha=2, mu=0, nu=1754, beta=1, W=1
+Initialization...complete. RMSE=433.3394/433.3394.
+>> 

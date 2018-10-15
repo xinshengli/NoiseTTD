@@ -1,0 +1,27 @@
+{Error using zeros
+Requested 841393800x30 (188.1GB) array exceeds maximum array size preference.
+Creation of arrays greater than this limit may take a long time and cause
+MATLAB to become unresponsive. See <a href="matlab: helpview([docroot
+'/matlab/helptargets.map'], 'matlab_env_workspace_prefs')">array size limit</a>
+or preference panel for more information.
+
+Error in BPMF (line 99)
+    Vs = zeros(D*N, n_sample);
+
+
+Error in ProbMF2 (line 33)
+[Us_bpmf, Vs_bpmf] = BPMF(CTr, CTe, D, alpha, [], {randU, randV}, ...
+
+Error in tt_tensor_sparse_PMF (line 352)
+        [u, v, res(i)] = ProbMF2(c, c, rank, b, i,
+        randMisPos,sampleNum,RankU{i},RankV{i});
+
+Error in scriptRun (line 12)
+[tt,res,density, uDensity, vDensity]= tt_tensor_sparse_PMF(A,eps,randMisPos,
+para,noiseDensity, sampleNum, RandU, RandV,RANK);
+
+Error in runClean_bookRatingBook300_29_30_4 (line 63)
+         [RMSE(i),~,rank(:,i),time(i),res(:,i), density(:,i), uDensity(:,i),
+         vDensity(:,i)] =  scriptRun(noiseTensor,eps(i),
+         randMisIdx,A,2,noiseDensity,sampleNum, RandU, RandV,RANK);
+} 
